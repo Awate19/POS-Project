@@ -1,0 +1,33 @@
+<div class="topnav" id="myTopnav">
+  <a href="/home" class="active">Home</a>
+  <a href="/sales">Sales</a>
+  <a href="/purchase">purchase</a>
+  <a href="/stock">Stock</a>
+  <a href="#report">Report</a>
+  <div class="dropdown">
+          <button class="dropbtn">Items
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/addnew">Add New Item</a>
+            <a href="/changepassword">Delete Item</a>  
+            </div>
+  </div>        
+  <div class="dropdown">
+    <button class="dropbtn"><%=username%>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="/updateuser">Update Users</a>
+      <a href="/deleteuser">Delete Users</a>  
+      <a href="/changepassword">Change password</a>
+      <a href="/" id="logout" onclick="let x=confirm('Are sure u want to logout');
+      if(x==false)
+      {
+          return false;
+      }
+      ">Logout</a>
+    </div>
+  </div>
+  <a href="#about">About</a>
+</div>

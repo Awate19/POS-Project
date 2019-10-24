@@ -1,0 +1,24 @@
+
+<div class="topnav" id0="myTopnav">
+    <a href="/home" class="active">Home</a>
+    <a href="/sales">Sales</a>
+    <a href="/stock">Stock</a>
+    <a href="#report">Report</a>
+    <div class="dropdown">
+      <button class="dropbtn" id="useruser"><%=username%>
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="/" id="logout" onclick="let x=confirm('Are sure u want to logout');
+        if(x==false)
+        {
+            return false;
+        }
+        ">Logout</a>
+        <a href="/changepassword">Change password</a>
+      </div>
+    </div>
+    <a href="#about">About</a>
+    <a href="#about" id='hide_user' ></a>
+  </div>
+  
